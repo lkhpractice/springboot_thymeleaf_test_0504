@@ -2,9 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/content.css}">
+<script type="text/javascript" src="/js/vali.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
 	<h2>안녕하세요!! 저는 타임리프입니다!</h2>
+	<span class="hellotext" th:text="${data}">헬로우월드</span><br>
+	<img th:src="@{/img/test.png}"><br><br>
+	
+	회원 이름 : <span th:text="${memberDto.name}">이순신</span><br>
+	회원 나이 : <span th:text="${memberDto.age}">37</span>
 </body>
 </html>
